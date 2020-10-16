@@ -273,6 +273,7 @@ Makefile: ../group_design_ui/group_design_ui.pro ../../../Qt5.14.2/5.14.2/mingw7
 		../../../Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/yacc.prf \
 		../../../Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/lex.prf \
 		../group_design_ui/group_design_ui.pro \
+		../../../Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Charts.prl \
 		../../../Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Widgets.prl \
 		../../../Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Gui.prl \
 		../../../Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Core.prl \
@@ -482,6 +483,7 @@ Makefile: ../group_design_ui/group_design_ui.pro ../../../Qt5.14.2/5.14.2/mingw7
 ../../../Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/yacc.prf:
 ../../../Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/lex.prf:
 ../group_design_ui/group_design_ui.pro:
+../../../Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Charts.prl:
 ../../../Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Widgets.prl:
 ../../../Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Gui.prl:
 ../../../Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Core.prl:

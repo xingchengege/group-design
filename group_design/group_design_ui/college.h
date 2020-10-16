@@ -46,6 +46,8 @@ public:
 	double low_rank_y2()const { return enroll_lowest_rank_[1]; }
 	double low_rank_y3()const { return enroll_lowest_rank_[2]; }
     double score_y1()const{return score_[0];}
+    double score_y2()const{return score_[1];}
+    double score_y3()const{return score_[2];}
 	bool is_211()const { return is_211_; }
 	bool is_985()const { return is_985_; }
 	bool is_double_first_class() const { return is_double_first_class_; }

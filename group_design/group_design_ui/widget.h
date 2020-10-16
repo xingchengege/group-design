@@ -2,6 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QLabel>
 #include"getdialog.h"
 #include"operation.h"
 #include"majormessage.h"
@@ -52,8 +53,11 @@ private slots:
 
 private:
     Ui::Widget *ui;
+
     GetDialog *grade_message;
+
     MajorMessage *Major;
+
     SchoolMessage *School;
 
     QString degree1,degree2;
@@ -65,6 +69,9 @@ private:
     MajorWidget *search_major_widget;
 
     operation user;
+
+    QLabel *producator_name;
+
     int grade;
 };
 #endif // WIDGET_H

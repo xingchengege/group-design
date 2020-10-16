@@ -61,7 +61,6 @@ void operation::recommend(int& degree, int& grade,vector<college>&s1,vector<coll
 };
 major operation::search_major(string&name) {
     major a;
-    qDebug()<<QString::fromStdString(name);
 	for (multimap<int, major>::iterator p = data_.majors_reference.begin(); p != data_.majors_reference.end(); p++) {
 		if ((p->second).name() == name) {
             return p->second;
@@ -70,12 +69,12 @@ major operation::search_major(string&name) {
     return a;
 }
 college operation::search_college(string&name) {
-
+    college s;
     for (multiset<college>::iterator p = data_.colleges_reference.begin(); p != data_.colleges_reference.end(); p++)
 		if (p->name()== name) {
             return *p;
 		}
-
+    return s;
 }
 void operation::totall_colleges() {
 	multiset<college, rule3>t_college;

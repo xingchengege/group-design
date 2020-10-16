@@ -23,6 +23,9 @@ Widget::Widget(QWidget *parent)
     , ui(new Ui::Widget)
 {
     ui->setupUi(this);
+    producator_name=new QLabel(ui->page_start);
+    producator_name->setText("制作者：\n\n刘星辰、孙亦刘");
+    producator_name->setGeometry(1000,520,200,200);
     recommand_widget=new SchoolWidget(ui->function_widget);
     recommand_widget->hide();
     search_school_widget=new ProvinceWidget(ui->function_widget);

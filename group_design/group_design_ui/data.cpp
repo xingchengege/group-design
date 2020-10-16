@@ -42,7 +42,6 @@ void data_base::grade_rank() {
 }
 void data_base::read_college() {
     ifstream file("D:\\c++_Group_Design\\group_design\\group_design_ui\\college_message.txt");
-    qDebug() << "wenjiandaxiao" << file.is_open();
 	double grade[3];
 	double rank[3];
 	int num = 0;
@@ -67,7 +66,6 @@ void data_base::read_college() {
 			, is_211, is_985, is_double, province);
 		colleges_reference.insert(a);
 	}
-    qDebug()<<colleges_reference.size();
 	file.close();
 }
 void data_base::read_major() {
@@ -79,7 +77,6 @@ void data_base::read_major() {
 	string name, introduction,city,industry, work;
 	major a;
 	file >> num;
-    qDebug()<<num;
 	for (int i = 0; i < num;i++) {
 			file >> name >> introduction >> city >> industry >> work >> category >> income;
 			file >> open_num;

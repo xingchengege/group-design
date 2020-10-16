@@ -51,7 +51,6 @@ SchoolButton::SchoolButton(const SchoolButton&s){
 
 }
 void SchoolButton::SetMessage(const QString name,const bool is_211,const bool is_985,const bool is_double,const int grade,const int rank){
-    qDebug()<<1;
     name_=name;
     is_211_=is_211;
     is_985_=is_985;
@@ -77,7 +76,6 @@ void SchoolButton::SetMessage(const QString name,const bool is_211,const bool is
     else image_double->hide();
     image_score->setGeometry(400,0,200,60);
     QString grade1=QString("%1\n\n去年最低录取分数").arg(grade_);
-    qDebug()<<grade1;
     image_score->setText(grade1);
     image_score->show();
     image_rank->setGeometry(600,0,200,60);
